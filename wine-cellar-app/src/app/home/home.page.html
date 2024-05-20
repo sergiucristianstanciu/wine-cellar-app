@@ -1,20 +1,55 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Test
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+<ion-menu contentId="main-content">
+  <ion-header>
+    <ion-toolbar color="secondary">
+      <ion-title>Hi, Sergiu</ion-title>
     </ion-toolbar>
   </ion-header>
+  <ion-content>
+    <ion-item>
+      <ion-icon name="barcode-outline"></ion-icon>
+      <span>Quick Scan</span>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="location-outline"></ion-icon>
+      <span>Locations</span>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="wine-outline"></ion-icon>
+      <span>Collections</span>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="heart-outline"></ion-icon>
+      <span>Wishlist</span>
+    </ion-item>
+  </ion-content>
+</ion-menu>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
-</ion-content>
+
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>
+        My Cellar
+      </ion-title>
+      <ion-buttons slot="end">
+        <ion-icon style="height: 2rem; width: 4rem;" name="barcode-outline"></ion-icon>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content [fullscreen]="true">
+    <ion-header collapse="condense">
+      <ion-toolbar>
+        <ion-title size="large">Blank</ion-title>
+      </ion-toolbar>
+    </ion-header>
+  
+    <div id="container">
+      <strong>Ready to create an app?</strong>
+      <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    </div>
+  </ion-content>
+</div>
