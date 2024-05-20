@@ -3,6 +3,5 @@
   "integrations": {
     "capacitor": {}
   },
-  "type": "angular-standalone",
-  "defaultBrowser": "chrome"
+  "type": "angular-standalone"
 }
